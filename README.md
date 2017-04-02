@@ -10,7 +10,8 @@ Steps for use:
 2) place dirtyisp.bash in a directory of your choosing (options default to /scripts/)
 3) edit dirtyisp.bash configuration section to match your needs.
 4) point dirtyisp.bash at a seed_list file, a sample file is included.
-5) run dirtyisp.bash
+5) add execute permission for dirtyisp.bash "chmod 755 ./dirtyisp.bash"
+6) run dirtyisp.bash
 
 steps for having always running daemon (on systemd):
 1) place the dirtyisp.service file in /etc/systemd/system
@@ -18,4 +19,4 @@ steps for having always running daemon (on systemd):
 3) as root/sudo, run "systemctl enable dirtyisp"
 4) as root/sudo, run "systemctl start dirtyisp"
 
-This script has tested on a raspberry pi 1B, 2, and 3, and was able to perform well on all three.
+This script has tested on a raspberry pi 1B, 2, and 3 running raspbian jessie, and was able to perform well on all three.
