@@ -1,0 +1,9 @@
+[Unit]
+Description=isp data tracking clogger
+
+[Service]
+ExecStart=/scripts/dirtyisp.bash
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
